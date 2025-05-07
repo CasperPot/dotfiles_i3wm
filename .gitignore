@@ -1,0 +1,24 @@
+#/dconf/
+#/go/
+#/pulse/
+#/spotify/
+#/systemd/
+#/yay/
+
+# Ignore everything
+*
+
+# Except all files in root folder
+!/* 
+# Except these specific directories and their contents
+!/i3/
+!/i3/*
+!/nemo/
+!/nemo/*
+!/polybar/
+!/polybar/*
+!/rofi/
+!/rofi/*
+
+
+
