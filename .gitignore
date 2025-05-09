@@ -13,12 +13,16 @@
 # Except these specific directories and their contents
 !/i3/
 !/i3/*
+!!/i3lock-color/
+!/i3lock-color/*
 !/nemo/
 !/nemo/*
 !/polybar/
 !/polybar/*
 !/rofi/
 !/rofi/*
+!/xrandr/
+!/xrandr/*
 
 
 
