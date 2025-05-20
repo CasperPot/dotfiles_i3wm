@@ -30,9 +30,9 @@ i3lock --nofork                 	\
     \
     --verif-font="Calvin and Hobbes"	\
     --verif-size=150			\
-    --verif-text="Welcome home!"	\
+    --verif-text=""	\
     --wrong-font="Calvin and Hobbes"	\
     --wrong-size=150			\
-    --wrong-text="No Entry!"		\
+    --wrong-text="Fout wachtwoord!"		\
     \
     --image=/home/casper/.config/i3lock-color/calvin_1600p.png
