@@ -11,18 +11,30 @@
 # Except all files in root folder
 !/* 
 # Except these specific directories and their contents
+!/alacritty/
+!/alacritty/*
+!/flameshot/
+!/flameshot/*
 !/i3/
 !/i3/*
 !!/i3lock-color/
 !/i3lock-color/*
 !/nemo/
 !/nemo/*
+!/picom/
+!/picom/*
 !/polybar/
 !/polybar/*
 !/rofi/
 !/rofi/*
+!/themes/
+!/themes/*
+!/wallpapers/
+!/wallpapers/*
 !/xrandr/
 !/xrandr/*
+!/yazi/
+!/yazi/*
 
 
 

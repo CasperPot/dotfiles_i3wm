@@ -39,6 +39,13 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.config/i3lock-color/i3
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+
+
+# gebruik brightnessctl om helderheid aan te passen
+#exec brightnessctl
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5% --exponent=3 
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%- --exponent=3
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
@@ -58,7 +65,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+d exec --no-startup-id rofi -show run
 
 # lock screen
-bindsym $mod+l exec --no-startup-id ~/.config/i3lock-color/i3lock-color.sh
+bindsym $mod+Control+l exec --no-startup-id ~/.config/i3lock-color/i3lock-color.sh
 
 bindsym $mod+Shift+s exec flameshot gui --clipboard >/dev/null
 
@@ -84,16 +91,16 @@ tiling_drag modifier titlebar
 bindsym $mod+Shift+a kill
 
 # change focus
-#bindsym $mod+j focus left
-#bindsym $mod+k focus down
-#bindsym $mod+l focus up
-#bindsym $mod+m focus right
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+m focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+#bindsym $mod+Left focus left
+#bindsym $mod+Down focus down
+#bindsym $mod+Up focus up
+#bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+j move left
@@ -102,10 +109,10 @@ bindsym $mod+Shift+l move up
 bindsym $mod+Shift+m move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+#bindsym $mod+Shift+Left move left
+#bindsym $mod+Shift+Down move down
+#bindsym $mod+Shift+Up move up
+#bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
 bindsym $mod+h split h

@@ -1,0 +1,21 @@
+# Copyright (c) 2016-present Sven Greb <development@svengreb.de>
+# This source code is licensed under the MIT license found in the license file.
+# Copyright (c) 2016-present Sven Greb <development@svengreb.de>
+# This source code is licensed under the MIT license found in the license file.
+
+# Copyright (c) 2016-present Sven Greb <development@svengreb.de>
+# This source code is licensed under the MIT license found in the license file.
+
+# import de Nord color theme
+[font]
+size = 10
+
+[general]
+
+import = [
+    "~/.config/themes/nord.toml"
+]
+
+[window]
+padding = {x=10, y=10}
+
